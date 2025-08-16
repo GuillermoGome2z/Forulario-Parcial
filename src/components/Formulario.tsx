@@ -2,39 +2,57 @@
 
 function Formulario() {
   return (
-      
-<form>
-  
-  <fieldset>Detalles Personales</fieldset>
+    <form>
+    <fieldset>
+   <legend>Detalles Personales</legend>
+        <div>
+     <label htmlFor="saludo">Saludo</label>
+    <select name="saludo" required>
+ <option value="">Ninguno</option>
+ <option value="Sr">Sr</option>
+ <option value="Sra">Sra</option>
+  <option value="Srta">Srta</option>
+ </select>
+   </div>
+
   <div>
-    <h1>Saludo</h1>
-    <select>
-    <option value="">Ninguno</option>
-    <option value="">Sr</option>
-    <option value="">Sra</option>
-    <option value="">Srta</option>
-  </select>
-  </div>
+  <label htmlFor="nombre">Nombre</label><br />
+  <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su Nombre" /><br />
+    </div>
 
-<label >Nombre</label><br/>
-<input type="text" value="Nombre" required placeholder="Ingrese su Nombre"></input><br/>
+        <div>
+          <label htmlFor="apellido">Apellido</label><br />
+          <input type="text" id="apellido" name="apellido" required placeholder="Ingrese su Apellido" /><br />
+        </div>
 
-<label >Apellido</label><br/>
-<input type="text" value="Apellido" required placeholder="Ingrese su Apellido"></input><br/>
+        <div>
+          <label>Género</label><br />
+          <input type="radio" id="generoM" name="genero" value="M" required />
+          <label htmlFor="generoM">M</label>
+          <input type="radio" id="generoF" name="genero" value="F" required />
+          <label htmlFor="generoF">F</label><br />
 
-<legend>Genero</legend>
-<input type="button" value="M" required></input>
-<input type="button" value="f" required></input>
+        </div>
 
-<label >Email</label><br/>
-<input type="email" value="Email" required placeholder="Ingrese su Correo"></input><br/>
 
-<label >Fecha de Nacimiento</label><br/>
-<input type="date" value="fechanacimiento"></input><br/>
+        <div>
+          <label htmlFor="email">Email</label><br />
+          <input type="email" id="email" name="email" required placeholder="Ingrese su Email" /><br />
+        </div>
 
-<label> Direccion</label><br/>
-<input type="" value="Direccion" required placeholder="Ingrese su Direccion"></input><br/>
+        <div>
+          <label htmlFor="fechanacimiento">Fecha de Nacimiento</label><br />
+          <input type="date" id="fechanacimiento" name="fechanacimiento" required /><br />
+        </div>
 
+
+        <div>
+          <label htmlFor="direccion">Dirección</label><br />
+          <input type="text" id="direccion" name="direccion" required placeholder="Ingrese su Dirección" /><br />
+        </div>
+
+
+      </fieldset>
     </form>
   )
 }
