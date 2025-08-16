@@ -28,29 +28,27 @@ function Formulario() {
         <div>
           <label>Género</label><br />
           <input type="radio" id="generoM" name="genero" value="M" required />
-          <label htmlFor="generoM">M</label>
+          <label htmlFor="generoM">Masculio</label>
           <input type="radio" id="generoF" name="genero" value="F" required />
-          <label htmlFor="generoF">F</label><br />
+          <label htmlFor="generoF">Femenino</label><br />
 
         </div>
 
-
-        <div>
+    <div>
           <label htmlFor="email">Email</label><br />
           <input type="email" id="email" name="email" required placeholder="Ingrese su Email" /><br />
-        </div>
+    </div>
 
         <div>
           <label htmlFor="fechanacimiento">Fecha de Nacimiento</label><br />
           <input type="date" id="fechanacimiento" name="fechanacimiento" required /><br />
         </div>
 
-
-        <div>
-          <label htmlFor="direccion">Dirección</label><br />
-          <input type="text" id="direccion" name="direccion" required placeholder="Ingrese su Dirección" /><br />
-        </div>
-
+      <div>
+  <label htmlFor="direccion">Dirección</label><br />
+  <textarea id="direccion" name="direccion" required placeholder="Ingrese su Dirección"></textarea><br />
+</div>                    
+ <input type="submit" value="enviar"></input>
 
       </fieldset>
     </form>
